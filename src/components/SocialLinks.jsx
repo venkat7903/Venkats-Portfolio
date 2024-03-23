@@ -14,7 +14,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/venkats7903",
       style: "rounded-tr-md",
     },
     {
@@ -24,7 +24,7 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://github.com/venkat7903/venkat7903.git",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "raja@gmail.com",
+      href: "mailto: venkatsrigakollu7903@gmail.com",
     },
     {
       id: 4,

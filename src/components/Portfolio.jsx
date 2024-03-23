@@ -1,4 +1,8 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-scroll";
+
 import nxtTrendz from "../assets/portfolio/nxttrendz.png";
 import nxtWatch from "../assets/portfolio/nxtwatch.png";
 import jobby from "../assets/portfolio/jobby.png";
@@ -8,14 +12,20 @@ const Portfolio = () => {
     {
       id: 1,
       src: nxtTrendz,
+      demo: "https://venkatsnxttrend.ccbp.tech/",
+      code: "https://github.com/venkat7903/Nxt-Trendz-Ecommerce-App.git",
     },
     {
       id: 2,
       src: nxtWatch,
+      demo: "https://venkatsnxtwatch.ccbp.tech/",
+      code: "https://github.com/venkat7903/Venkats-Nxt-Watch.git",
     },
     {
       id: 3,
       src: jobby,
+      demo: "https://jobbyfinder.ccbp.tech/",
+      code: "https://github.com/venkat7903/Jobby-App.git",
     },
   ];
 
@@ -32,7 +42,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg ">
               <img
                 className="rounded-md duration-200 hover:scale-105 h-[180px]  w-full"
@@ -40,12 +50,22 @@ const Portfolio = () => {
                 alt=""
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href={code}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}

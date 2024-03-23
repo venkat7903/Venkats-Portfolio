@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -6,41 +7,63 @@ import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import nodejs from "../assets/nodejs.png";
 import github from "../assets/github.png";
+import bootstrap from "../assets/bootstrap.png";
+import tailwind from "../assets/tailwind.png";
+import python from "../assets/python.png";
 
 const Experience = () => {
+  console.log(uuidv4(), uuidv4());
   const skills = [
     {
-      id: 1,
+      id: uuidv4(),
+      src: python,
+      title: "Python",
+      style: "shadow-sky-600",
+    },
+    {
+      id: uuidv4(),
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
     },
     {
-      id: 2,
+      id: uuidv4(),
       src: css,
       title: "CSS",
       style: "shadow-blue-500",
     },
     {
-      id: 3,
+      id: uuidv4(),
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
     },
     {
-      id: 4,
+      id: uuidv4(),
       src: react,
       title: "React",
       style: "shadow-blue-600",
     },
     {
-      id: 5,
+      id: uuidv4(),
       src: nodejs,
       title: "Node Js",
       style: "shadow-green-500",
     },
     {
-      id: 6,
+      id: uuidv4(),
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-purple-500",
+    },
+    {
+      id: uuidv4(),
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-sky-400",
+    },
+    {
+      id: uuidv4(),
       src: github,
       title: "Github",
       style: "shadow-gray-400",
@@ -50,7 +73,7 @@ const Experience = () => {
   return (
     <div
       name="skills"
-      className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="py-[40px] min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto my-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
