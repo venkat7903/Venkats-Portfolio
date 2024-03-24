@@ -3,6 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import MobileSocialLinks from "./MobileSocialLinks";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -52,6 +53,7 @@ const Home = () => {
               </span>
             </Link>
           </div>
+          <MobileSocialLinks />
         </div>
 
         <div className="md:w-[50%]">
