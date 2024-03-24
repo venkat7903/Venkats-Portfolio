@@ -1,38 +1,59 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-scroll";
+import { v4 as uuidv4 } from "uuid";
 
 import nxtTrendz from "../assets/portfolio/nxttrendz.png";
 import nxtWatch from "../assets/portfolio/nxtwatch.png";
 import jobby from "../assets/portfolio/jobby.png";
+import foodmunch from "../assets/portfolio/foodmunch.png";
+import wikipedia from "../assets/portfolio/wiki.png";
+import emojigame from "../assets/portfolio/emojigame.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
-      id: 1,
+      id: uuidv4(),
       src: nxtTrendz,
       demo: "https://venkatsnxttrend.ccbp.tech/",
       code: "https://github.com/venkat7903/Nxt-Trendz-Ecommerce-App.git",
     },
     {
-      id: 2,
+      id: uuidv4(),
       src: nxtWatch,
       demo: "https://venkatsnxtwatch.ccbp.tech/",
       code: "https://github.com/venkat7903/Venkats-Nxt-Watch.git",
     },
     {
-      id: 3,
+      id: uuidv4(),
       src: jobby,
       demo: "https://jobbyfinder.ccbp.tech/",
       code: "https://github.com/venkat7903/Jobby-App.git",
+    },
+    {
+      id: uuidv4(),
+      src: emojigame,
+      demo: "https://reactmojigame.ccbp.tech/",
+      code: "https://github.com/venkat7903/emoji-game.git",
+    },
+    {
+      id: uuidv4(),
+      src: foodmunch,
+      demo: "http://foodiemunchi.ccbp.tech",
+      code: "https://github.com/venkat7903/venkat7903.git",
+    },
+    {
+      id: uuidv4(),
+      src: wikipedia,
+      demo: "http://ccbpwikipedia.ccbp.tech",
+      code: "https://github.com/venkat7903/venkat7903.git",
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className="pb-[40px] bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="md:min-h-screen flex flex-col justify-center bg-gradient-to-b from-black to-gray-800 w-full text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-4 md:p-8">

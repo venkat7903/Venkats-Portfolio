@@ -10,10 +10,18 @@ import github from "../assets/github.png";
 import bootstrap from "../assets/bootstrap.png";
 import tailwind from "../assets/tailwind.png";
 import python from "../assets/python.png";
+import postman from "../assets/postman.png";
+import c from "../assets/c.png";
 
 const Experience = () => {
   console.log(uuidv4(), uuidv4());
   const skills = [
+    {
+      id: uuidv4(),
+      src: c,
+      title: "C++",
+      style: "shadow-indigo-600",
+    },
     {
       id: uuidv4(),
       src: python,
@@ -68,12 +76,18 @@ const Experience = () => {
       title: "Github",
       style: "shadow-gray-400",
     },
+    {
+      id: uuidv4(),
+      src: postman,
+      title: "Postman",
+      style: "shadow-orange-600",
+    },
   ];
 
   return (
     <div
       name="skills"
-      className="py-[40px] min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full"
     >
       <div className="max-w-screen-lg mx-auto my-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
