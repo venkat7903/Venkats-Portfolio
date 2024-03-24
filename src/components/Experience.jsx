@@ -14,7 +14,6 @@ import postman from "../assets/postman.png";
 import c from "../assets/c.png";
 
 const Experience = () => {
-  console.log(uuidv4(), uuidv4());
   const skills = [
     {
       id: uuidv4(),
@@ -87,7 +86,7 @@ const Experience = () => {
   return (
     <div
       name="skills"
-      className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full"
+      className="pt-10 md:p-[45px] min-h-screen flex flex-col justify-center bg-gradient-to-b from-gray-800 to-black w-full"
     >
       <div className="max-w-screen-lg mx-auto my-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
