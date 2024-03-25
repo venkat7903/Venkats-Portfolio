@@ -38,15 +38,15 @@ const Portfolio = () => {
     },
     {
       id: uuidv4(),
-      src: foodmunch,
-      demo: "http://foodiemunchi.ccbp.tech",
-      code: "https://github.com/venkat7903/venkat7903.git",
+      src: wikipedia,
+      demo: "http://ccbpwikipedia.ccbp.tech",
+      code: "https://github.com/venkat7903/Wikipedia-Search-App.git",
     },
     {
       id: uuidv4(),
-      src: wikipedia,
-      demo: "http://ccbpwikipedia.ccbp.tech",
-      code: "https://github.com/venkat7903/venkat7903.git",
+      src: foodmunch,
+      demo: "http://foodiemunchi.ccbp.tech",
+      code: "https://github.com/venkat7903/Food-Munch.git",
     },
   ];
 
