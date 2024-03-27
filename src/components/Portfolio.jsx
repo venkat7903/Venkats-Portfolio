@@ -9,6 +9,7 @@ import jobby from "../assets/portfolio/jobby.png";
 import foodmunch from "../assets/portfolio/foodmunch.png";
 import wikipedia from "../assets/portfolio/wiki.png";
 import emojigame from "../assets/portfolio/emojigame.png";
+import todolist from "../assets/portfolio/TodoList.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -41,6 +42,12 @@ const Portfolio = () => {
       src: wikipedia,
       demo: "http://ccbpwikipedia.ccbp.tech",
       code: "https://github.com/venkat7903/Wikipedia-Search-App.git",
+    },
+    {
+      id: uuidv4(),
+      src: todolist,
+      demo: "https://yourstodotasks.ccbp.tech/",
+      code: "https://github.com/venkat7903/Todo-List.git",
     },
     {
       id: uuidv4(),
