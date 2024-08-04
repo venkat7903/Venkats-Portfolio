@@ -3,6 +3,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
+import aiChatbot from "../assets/portfolio/AIchatbot.png";
 import nxtTrendz from "../assets/portfolio/nxttrendz.png";
 import nxtWatch from "../assets/portfolio/nxtwatch.png";
 import jobby from "../assets/portfolio/jobby.png";
@@ -13,6 +14,12 @@ import todolist from "../assets/portfolio/TodoList.png";
 
 const Portfolio = () => {
   const portfolios = [
+    {
+      id: uuidv4(),
+      src: aiChatbot,
+      demo: "https://d4x9ksw054jnb.cloudfront.net/",
+      code: "https://colab.research.google.com/drive/1omnPi_FSm9Uoj-xuH7N-iQfR4it0Mka8?usp=sharing",
+    },
     {
       id: uuidv4(),
       src: nxtTrendz,

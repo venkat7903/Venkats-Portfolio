@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
+import mySql from "../assets/mysql-icon.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -44,6 +45,12 @@ const Experience = () => {
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
+    },
+    {
+      id: uuidv4(),
+      src: mySql,
+      title: "MySQL",
+      style: "shadow-orange-300",
     },
     {
       id: uuidv4(),

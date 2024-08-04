@@ -28,7 +28,7 @@ const MobileSocialLinks = () => {
     {
       id: 4,
       child: <BsFillPersonLinesFill size={30} />,
-      href: "/resume.pdf",
+      href: "/resume1.pdf",
       name: "Resume",
       download: true,
     },
