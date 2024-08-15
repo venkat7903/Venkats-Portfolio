@@ -1,6 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import HeroImage from "../assets/heroImage.png";
+//import HeroImage from "../assets/heroImage.png";
+import HeroImage from "../assets/heroImage1.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import MobileSocialLinks from "./MobileSocialLinks";
@@ -60,7 +61,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-[60%] md:w-[100%] lg:w-[90%]"
+            className="rounded-2xl mx-auto w-[60%] md:w-[100%] lg:w-[80%]"
           />
         </div>
       </div>
